@@ -18,13 +18,19 @@ function PlantPage() {
     setPlant([...plant, newPlant])
   }
 
+  function handleDelete(deletePlant){
+    //console.log("deleted")
+    const updatedPlant = plant.filter(p => p.id !== deletePlant.id )
+    setPlant(updatedPlant)
+  }
+
   const displayPlant = plant.filter(p => p.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <main>
       <NewPlantForm onFormSubmit={handleSubmit}/>
       <Search search={search} setSearch={setSearch} />
-      <PlantList plant={displayPlant} />
+      <PlantList plant={displayPlant} onDelete={handleDelete} />
     </main>
   );
 }

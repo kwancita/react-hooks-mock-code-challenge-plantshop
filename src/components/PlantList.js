@@ -1,10 +1,10 @@
 import React from "react";
 import PlantCard from "./PlantCard";
 
-function PlantList({plant}) {
+function PlantList({plant, onDelete}) {
 
   const allPlant = plant.map((myPlant) =>{
-    return <PlantCard key={myPlant.id} myPlant={myPlant}/>
+    return <PlantCard key={myPlant.id} myPlant={myPlant} onDelete={onDelete}/>
   })
 
   return (

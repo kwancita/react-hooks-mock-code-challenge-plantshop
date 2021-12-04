@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Pilea Peperomioides",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTDwVqPf3tf7KMTAT1qgdtrD9JIq0lGY9Fv2dtBFgB1LHDghWF_P5kYdE_uugkYfPWrDm0lxC4X53PP4k9TBCrzseIOZq5UOJ-3Of213uJkbu9ixMsJSg9O1V4&usqp=CAc",
+      "price": "38",
+      "id": 8
     }
   ]
 }
